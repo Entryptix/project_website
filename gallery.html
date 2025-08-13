@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - NewJeans Fan Site </title>
+  <link rel="icon" href="images/njz.jpg" type="image/jpg" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background-color: #111;
+      transition: background-color 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 100;
+    }
+
+    header .logo img {
+      height: 50px;
+    }
+
+    nav {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4), 1px 1px 3px rgba(255, 255, 255, 0.4);
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff4f58;
+    }
+
+    .main-content {
+      text-align: center;
+      padding: 3rem 1rem;
+      margin-top: 100px;
+      flex: 1;
+    }
+
+    .main-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #fff;
+    }
+
+    .main-content p {
+      font-size: 1.2rem;
+      color: #ddd;
+      margin-bottom: 2rem;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .album-box {
+      width: 250px;
+      height: 300px;
+      border-radius: 15px;
+      overflow: hidden;
+      position: relative;
+      background-color: #222;
+      box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .album-box img,
+    .album-box iframe,
+    .album-box video {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      border: none;
+    }
+
+    .album-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 79, 88, 0.6);
+    }
+
+    .album-title {
+      padding: 0.8rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+      background-color: #111;
+      border-top: 1px solid #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.9); /* Dark footer background */
+      color: #fff;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 10px 0;
+        font-size: 1rem;
+      }
+
+      .gallery {
+        justify-content: center;
+      }
+
+      .album-box {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo">
+      <img src="images/logo.png" alt="NewJeans Logo" />
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a> 
+      <a href="members.html">Members</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <h1>NewJeans Gallery 📸🖼️</h1>
+    <p>Explore NewJeans' albums! Click on each album to discover more pictures of your favorite member.</p>
+
+    <!-- Albums -->
+    <div class="gallery">
+      <a href="OT5-gallery.html" class="album-box">
+        <img src="images/ot5_album.jpg" alt="OT5 Album" />
+        <div class="album-title">NewJeans</div>
+      </a>
+
+      <a href="hanni-gallery.html" class="album-box">
+        <img src="images/hanni_album.jpg" alt="Hanni Album" />
+        <div class="album-title">Hanni Pham</div>
+      </a>
+
+      <a href="minji-gallery.html" class="album-box">
+        <img src="images/minji_album.jpg" alt="Minji Album" />
+        <div class="album-title">Minji</div>
+      </a>
+
+      <a href="haerin-gallery.html" class="album-box">
+        <img src="images/haerin_album.jpg" alt="Haerin Album" />
+        <div class="album-title">Haerin</div>
+      </a>
+
+      <a href="danielle-gallery.html" class="album-box">
+        <img src="images/danielle_album.jpg" alt="Danielle Album" />
+        <div class="album-title">Danielle</div>
+      </a>
+
+      <a href="Hyein-gallery.html" class="album-box">
+        <img src="images/Hyein_album.jpg" alt="Hyein Album" />
+        <div class="album-title">Hyein</div>
+      </a>
+    </div>
+
+   <!-- Video Gallery Section -->
+<h2 style="text-align:center; margin-top: 3rem; font-size: 2rem;"> NewJeans Videos Gallery 🎥🖼️</h2>
+<div class="gallery">
+
+  <!-- OT5 Video Gallery -->
+  <a href="ot5-videos.html" class="album-box">
+    <img src="images/ot5_video_thumb.gif" alt="OT5 Video Gallery" />
+    <div class="album-title">NewJeans Videos</div>
+  </a>
+
+  <!-- Hanni Video Gallery -->
+  <a href="hanni-videos.html" class="album-box">
+    <img src="images/hanni_video_thumb.gif" alt="Hanni Video Gallery" />
+    <div class="album-title">Hanni Pham Videos</div>
+  </a>
+
+  <!-- Minji Video Gallery -->
+  <a href="minji-videos.html" class="album-box">
+    <img src="images/minji_video_thumb.gif" alt="Minji Video Gallery" />
+    <div class="album-title">Minji Videos</div>
+  </a>
+
+  <!-- Haerin Video Gallery -->
+  <a href="haerin-videos.html" class="album-box">
+    <img src="images/haerin_video_thumb.gif" alt="Haerin Video Gallery" />
+    <div class="album-title">Haerin Videos</div>
+  </a>
+
+  <!-- Danielle Video Gallery -->
+  <a href="danielle-videos.html" class="album-box">
+    <img src="images/danielle_video_thumb.gif" alt="Danielle Video Gallery" />
+    <div class="album-title">Danielle Videos</div>
+  </a>
+
+  <!-- Hyein Video Gallery -->
+  <a href="hyein-videos.html" class="album-box">
+    <img src="images/hyein_video_thumb.gif" alt="Hyein Video Gallery" />
+    <div class="album-title">Hyein Videos</div>
+  </a>
+</div>
+</div>
+  <footer>
+    <p>&copy; 2025 NewJeans Fan Site. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

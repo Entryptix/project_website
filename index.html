@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NewJeans Fan Site</title>
+  
+  <!-- Favicon link -->
+  <link rel="icon" href="images/njz.jpg" type="image/jpg" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      transition: background-color 0.5s ease, color 0.5s ease;
+      overflow-x: hidden;
+      color: #fff; /* Text for dark mode */
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Dark Mode */
+    body {
+      background-color: #111;
+      color: #fff;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -2;
+      animation: slideshow 20s infinite;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    @keyframes slideshow {
+        0% { background-image: url('images/bg1.jpg'); }
+        33% { background-image: url('images/bg2.jpg'); }
+        66% { background-image: url('images/bg3.jpg'); }
+        100% { background-image: url('images/bg1.jpg'); }
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-color: rgba(0, 0, 0, 0.9); /* Dark header background */
+      position: relative;
+      z-index: 1;
+      transition: background-color 0.5s ease;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav {
+      flex: 1;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #fff; /* Dark mode text color */
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.4), 1px 1px 3px rgba(0, 0, 0, 0.4);
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: red; /* Change color to red on hover */
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.4), 1px 1px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    .theme-toggle {
+      display: none; /* Hide the theme toggle button */
+    }
+
+    .main-content {
+      text-align: center;
+      padding: 5rem 2rem;
+      flex: 1 0 auto;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6), 1px 1px 2px rgba(0, 0, 0, 0.7);
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.4), 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.9); /* Dark footer background */
+      color: #fff;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">
+      <img src="images/logo.png" alt="NewJeans Logo" />
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a> 
+      <a href="members.html">Members</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <h1>Welcome to the NewJeans Fan Site</h1>
+    <p>Your #1 source for everything about NewJeans! Explore the latest updates, photos, and fan content about Hanni, Minji, Danielle, Haerin, and Hyein 💙</p>
+  </div>
+
+  <footer>
+    &copy; 2025 NewJeans Fan Site. All rights reserved.
+  </footer>
+</body>
+</html>
